@@ -1,10 +1,12 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +37,45 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+nav {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav > h1 > .logo:visited {
+  color: #000;
+  text-decoration: none;
+  font-size: 30px;
+}
+nav > h1 > .logo {
+  color: #000;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.navbar-item {
+  list-style: none;
+  margin-right: 40px;
+  text-decoration: none;
+  padding: 10px;
+  border: 1px solid #fff;
+}
+.navbar-item:hover {
+  border: 1px solid salmon;
+
+  border-radius: 10px;
+}
+.navbar-links {
+  text-decoration: none;
+  color: #000;
 }
