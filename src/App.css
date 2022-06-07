@@ -64,15 +64,18 @@ nav > ul {
   align-items: center;
 }
 .navbar-item {
-  list-style: none;
+  list-style-type: none;
   margin-right: 40px;
   text-decoration: none;
   padding: 10px;
   border: 1px solid #fff;
 }
+.active {
+  border: 1px solid #a4a4a4;
+  border-radius: 10px;
+}
 .navbar-item:hover {
   border: 1px solid salmon;
-
   border-radius: 10px;
 }
 .navbar-links {

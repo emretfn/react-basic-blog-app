@@ -18,7 +18,9 @@ function Navbar() {
           </Link>
         </h1>
         <ul>
-          <li className="navbar-item">
+          <li
+            className={`navbar-item ${active === "homepage" ? "active" : ""}`}
+          >
             <Link
               onClick={() => setActive("homepage")}
               className="navbar-links"
@@ -27,7 +29,7 @@ function Navbar() {
               Homepage
             </Link>
           </li>
-          <li className="navbar-item">
+          <li className={`navbar-item ${active === "blogs" ? "active" : ""}`}>
             <Link
               onClick={() => setActive("blogs")}
               className="navbar-links"
@@ -36,7 +38,7 @@ function Navbar() {
               Blogs
             </Link>
           </li>
-          <li className="navbar-item">
+          <li className={`navbar-item ${active === "about" ? "active" : ""}`}>
             <Link
               onClick={() => setActive("about")}
               className="navbar-links"

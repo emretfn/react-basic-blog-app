@@ -9,6 +9,7 @@ function Blog() {
   useEffect(() => {
     axios("https://jsonplaceholder.typicode.com/posts")
       .then((res) => setPosts(res.data))
+      .catch((err) => console.log(err))
       .finally(() => setIsLoading(false));
   }, []);
 
